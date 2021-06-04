@@ -12,7 +12,7 @@ require (
 	github.com/mattermost/mattermost-server/v5 v5.25.2
 	github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b // indirect
 	github.com/mitchellh/mapstructure v1.4.1
-	github.com/muesli/reflow v0.2.0
+	github.com/muesli/reflow v0.3.0
 	github.com/onsi/gomega v1.5.0 // indirect
 	github.com/sirupsen/logrus v1.8.1
 	github.com/slack-go/slack v0.9.0

@@ -67,7 +67,7 @@ github.com/mattermost/mattermost-server/v5/utils/markdown
 github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.12
 github.com/mattn/go-isatty
-# github.com/mattn/go-runewidth v0.0.9
+# github.com/mattn/go-runewidth v0.0.12
 github.com/mattn/go-runewidth
 # github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b
 ## explicit
@@ -75,7 +75,7 @@ github.com/mgutz/ansi
 # github.com/mitchellh/mapstructure v1.4.1
 ## explicit
 github.com/mitchellh/mapstructure
-# github.com/muesli/reflow v0.2.0
+# github.com/muesli/reflow v0.3.0
 ## explicit
 github.com/muesli/reflow/ansi
 github.com/muesli/reflow/wordwrap
@@ -89,6 +89,8 @@ github.com/pelletier/go-toml
 github.com/pkg/errors
 # github.com/pmezard/go-difflib v1.0.0
 github.com/pmezard/go-difflib/difflib
+# github.com/rivo/uniseg v0.2.0
+github.com/rivo/uniseg
 # github.com/sirupsen/logrus v1.8.1
 ## explicit
 github.com/sirupsen/logrus
