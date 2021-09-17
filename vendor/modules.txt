@@ -92,7 +92,7 @@ github.com/pmezard/go-difflib/difflib
 # github.com/sirupsen/logrus v1.8.1
 ## explicit
 github.com/sirupsen/logrus
-# github.com/slack-go/slack v0.9.0
+# github.com/slack-go/slack v0.9.5
 ## explicit
 github.com/slack-go/slack
 github.com/slack-go/slack/internal/backoff
