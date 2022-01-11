@@ -295,7 +295,7 @@ func GetUsersOptionPresence(n bool) GetUsersOption {
 func newUserPagination(c *Client, options ...GetUsersOption) (up UserPagination) {
 	up = UserPagination{
 		c:     c,
-		limit: 1000, // per slack api documentation.
+		limit: 200, // per slack api documentation.
 	}
 
 	for _, opt := range options {
@@ -329,7 +329,9 @@ func (t UserPagination) Failure(err error) error {
 }
 
 func (t UserPagination) Next(ctx context.Context) (_ UserPagination, err error) {
-	var resp *userResponseFull
+	var (
+		resp *userResponseFull
+	)
 
 	if t.c == nil || (t.previousResp != nil && t.previousResp.Cursor == "") {
 		return t, errPaginationComplete
@@ -467,9 +469,7 @@ func (api *Client) SetUserPhoto(image string, params UserSetPhotoParams) error {
 // SetUserPhotoContext changes the currently authenticated user's profile image using a custom context
 func (api *Client) SetUserPhotoContext(ctx context.Context, image string, params UserSetPhotoParams) (err error) {
 	response := &SlackResponse{}
-	values := url.Values{
-		"token": {api.token},
-	}
+	values := url.Values{}
 	if params.CropX != DEFAULT_USER_PHOTO_CROP_X {
 		values.Add("crop_x", strconv.Itoa(params.CropX))
 	}
@@ -524,6 +524,7 @@ func (api *Client) SetUserRealNameContextWithUser(ctx context.Context, user, rea
 			RealName: realName,
 		},
 	)
+
 	if err != nil {
 		return err
 	}
@@ -594,6 +595,7 @@ func (api *Client) SetUserCustomStatusContextWithUser(ctx context.Context, user,
 			StatusExpiration: statusExpiration,
 		},
 	)
+
 	if err != nil {
 		return err
 	}
