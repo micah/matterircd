@@ -15,7 +15,7 @@ require (
 	github.com/muesli/reflow v0.2.0
 	github.com/onsi/gomega v1.5.0 // indirect
 	github.com/sirupsen/logrus v1.8.1
-	github.com/slack-go/slack v0.9.0
+	github.com/slack-go/slack v0.11.2
 	github.com/sorcix/irc v1.1.4
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.7.1
